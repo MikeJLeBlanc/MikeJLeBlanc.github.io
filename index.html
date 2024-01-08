@@ -1,78 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike's Resume</title>
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <!-- styles -->
-    <link rel="stylesheet" href="./Support/styles.css">
-  </head>
-  <body>
-    <nav>
-      <div class="nav-center">
-        <div class="nav-header">
-          <img src="./Support/logo.png" class="logo" alt="logo">
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-        <ul class="links">
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="./Support/about.html">about</a>
-          </li>
-          <li>
-            <a href="./Support/projects.html">projects</a>
-          </li>
-          <li>
-            <a href="./Support/contact.html">contact</a>
-          </li>
-        </ul>
-        <!-- social media -->
-        <ul class="social-icons">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/MikeLeb05318893" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-behance"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/mike-j-leblanc" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-sketch"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <title>Mike LeBlanc's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <i class="bx bx-menu" id="nav-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
     <main>
-      <section class="container">
-        <div class="title">
-            <h2>Greetings!</h2>
-            <div class="underline"></div>
-        </div>
-        <article class="review">
-            <p id="info">My name is Mike LeBlanc, and I am a programming student. I have over a year’s worth of experience in programming and building databases. My suite of languages includes, but is not limited to, Python, Java, and MySQL. I’ve developed these skills through schooling and various projects that I’ve completed as my own undertaking; the most recent being a game I’ve made.  I excel in collaborating with a team environment, communicating effectively, and learning every day. I grew up with a fascination of computers and their innerworkings, and I believe my skillset would be an asset to your team. Are there any opportunities for a current student to gain an internship and receive a wealth of knowledge?</p>
-        </article>
-    </section>
-  </main>
-    <script src="app.js"></script>
-  </body>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, my name is</h3>
+                <h1>Mike LeBlanc</h1>
+                <h3>And I'm <span id="home-span"></span></h3>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/mike-j-leblanc"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://twitter.com/MikeLeb05318893"><i class="bx bxl-twitter"></i></a>
+                </div>
+                <a href="Support/MikeLeBlancResume.docx" class="btn" download="MikeLeBlancResume">Download Resume</a>
+            </div>
+            <div class="home-img">
+                <img src="Support/me.png" alt="Mike LeBlanc">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="Support/me.png" alt="Mike LeBlanc">
+            </div>
+            <div class="about-content">
+               <h2 class="heading">About <span> Me</span></h2>
+               <h3>Junior Software Developer</h3>
+                <p>An aspiring student working diligently to meet the needs of clients and employers alike.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h2 class="heading">My <span>Services</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating websites and web applications using a L.A.M.P stack, and other web technologies.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bxs-data' ></i>
+                    <h3>Database Development</h3>
+                    <p>Creating mobile applications using MySQL, MongoDB and other DBMS.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bxl-python' ></i>
+                    <h3>Desktop Development</h3>
+                    <p>Creating desktop applications using Python, Java, C, and other programming languages.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="Support/project1.jpg" alt="Mike LeBlanc">
+                    <div class="portfolio-content">
+                        <h3>Project 1</h3>
+                        <p>Project 1 description</p>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="Support/project2.jpg" alt="Mike LeBlanc">
+                    <div class="portfolio-content">
+                        <h3>Project 2</h3>
+                        <p>Project 2 description</p>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="Support/project3.jpg" alt="Mike LeBlanc">
+                    <div class="portfolio-content">
+                        <h3>Project 3</h3>
+                        <p>Project 3 description</p>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="Support/project4.jpg" alt="Mike LeBlanc">
+                    <div class="portfolio-content">
+                        <h3>Project 4</h3>
+                        <p>Project 4 description</p>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="Support/project5.jpg" alt="Mike LeBlanc">
+                    <div class="portfolio-content">
+                        <h3>Project 5</h3>
+                        <p>Project 5 description</p>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="Support/project6.jpg" alt="Mike LeBlanc">
+                    <div class="portfolio-content">
+                        <h3>Project 6</h3>
+                        <p>Project 6 description</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="#contact" method="get" enctype="text/plain">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; by Mike LeBlanc</p>
+            </div>
+            <div class="iconTop"><a href="#home"><i class='bx bxs-up-arrow-alt'></i></a></div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

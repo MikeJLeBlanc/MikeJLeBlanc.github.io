@@ -301,6 +301,11 @@ span {
     transform: translateY(0);
 }
 
+.portfolio-box a:link, .portfolio-box a:visited
+.portfolio-box a:hover, .portfolio-box a:active {
+    color: white;
+}
+
 .portfolio-content h4 {
     font-size: 3rem;
 }

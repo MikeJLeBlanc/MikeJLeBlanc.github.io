@@ -299,10 +299,6 @@ span {
 
 .portfolio-box:hover .portfolio-content {
     transform: translateY(0);
-}
-
-.portfolio-box a:link, .portfolio-box a:visited
-.portfolio-box a:hover, .portfolio-box a:active {
     color: white;
 }
 
